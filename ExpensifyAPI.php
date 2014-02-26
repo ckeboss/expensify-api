@@ -81,7 +81,7 @@ class ExpensifyAPI {
 	}
 	
 	private function login_if_not_already($respCode, $callback, &$resp) {
-		if($respCode == 407) {
+		if($respCode == 408) {
 			if(!$this->authenticate()) {
 				return false;
 			} else {
